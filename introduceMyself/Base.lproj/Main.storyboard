@@ -47,6 +47,9 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" red="0.0" green="0.45679928829999999" blue="0.58405547889999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="introduceDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ux1-Gw-l2g"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tz9-ox-Fjm">
                                 <rect key="frame" x="42" y="507" width="308" height="32"/>
@@ -98,6 +101,9 @@
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="LMW-ix-ggB">
                                 <rect key="frame" x="245" y="586" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stepperDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="B4A-3J-mub"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvM-cW-Qc4">
                                 <rect key="frame" x="108" y="593" width="42" height="25"/>
@@ -117,7 +123,11 @@
                     <connections>
                         <outlet property="firstNameTextField" destination="jc9-fe-Mzr" id="evz-PN-1D9"/>
                         <outlet property="lastNameTextField" destination="76g-oD-5q2" id="3xp-Wg-GQA"/>
+                        <outlet property="morePetSteppers" destination="LMW-ix-ggB" id="Lnz-Vj-kLJ"/>
+                        <outlet property="morePetSwitch" destination="PnZ-IQ-gvF" id="DN2-4N-hHf"/>
+                        <outlet property="numberOfPetLabel" destination="hvM-cW-Qc4" id="WMQ-Bw-QRq"/>
                         <outlet property="schoolNameTextField" destination="c3q-En-meb" id="fT6-ER-Vp3"/>
+                        <outlet property="yearSegmentedControl" destination="tz9-ox-Fjm" id="kPE-yy-P8i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
